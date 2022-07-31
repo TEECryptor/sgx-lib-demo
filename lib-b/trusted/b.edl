@@ -1,0 +1,16 @@
+enclave {
+
+    trusted {
+        /*
+        *  At least, a public ECALL function must be defined in EDL.
+        */
+        public void dummy(void);
+    };
+
+    untrusted {
+        /*
+        *  Output message to console in enclave
+        */
+        void ocall_printf([in, string] const char *str);
+    };
+};
