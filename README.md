@@ -4,30 +4,21 @@
 - 本项目包含两个可信库项目(lib-a和lib-b)和一个可信服务项目(example)，用来展示如何开发SGX可信库、以及如何使用可信库。
 
 ### 项目目录
-|---3rdparty : lib-a和lib-b两个项目的安装输出目录，自动生成。
-|
-|
-|---example : 测试用可信服务项目目录
-|    |
-|    |---App : 非可信代码目录
-|    |
-|    |---cmake : SGX编译脚本目录，请勿修改
-|    |
-|    |---Enclave : 可信代码目录
-|
-|---lib-a : 单可信库项目目录，该项目编译后只输出一个可信库文件libsgx-lib-a_t.a
-|    |
-|    |---cmake : SGX编译脚本目录，请勿修改
-|    |
-|    |---trusted : 可信代码目录
-|
-|---lib-b : 双可信库项目目录，该项目编译后输出两个可信库文件libsgx-lib-b_t.a和libsgx-lib-b_u.a
-|    |
-|    |---cmake : SGX编译脚本目录，请勿修改
-|    |
-|    |---trusted : 非可信代码目录
-|    |
-|    |---untrusted : 可信代码目录
+- 3rdparty : lib-a和lib-b两个项目的安装输出目录，自动生成。
+
+- example : 测试用可信服务项目目录
+    - App : 非可信代码目录
+    - cmake : SGX编译脚本目录，请勿修改
+    - Enclave : 可信代码目录
+
+- lib-a : 单可信库项目目录，该项目编译后只输出一个可信库文件libsgx-lib-a_t.a
+    - cmake : SGX编译脚本目录，请勿修改
+    - trusted : 可信代码目录
+
+- lib-b : 双可信库项目目录，该项目编译后输出两个可信库文件libsgx-lib-b_t.a和libsgx-lib-b_u.a
+    - cmake : SGX编译脚本目录，请勿修改
+    - trusted : 非可信代码目录
+    - untrusted : 可信代码目录
 
 ## 编译
 
