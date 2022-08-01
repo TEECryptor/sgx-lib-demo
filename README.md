@@ -28,6 +28,7 @@
 ```
     $ cd ./lib-a
     $ mkdir build
+    $ cd build
 ```
 - 编译
 
@@ -44,6 +45,7 @@
 ```
     $ cd ./lib-b
     $ mkdir build
+    $ cd build
 ```
 - 编译
 
@@ -60,6 +62,7 @@
 ```
     $ cd ./example
     $ mkdir build
+    $ cd build
 ```
 - 编译
 
